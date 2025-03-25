@@ -5,7 +5,8 @@ import styles from './Header.module.css'
 import TaskList from './task_list/taskList';
 import taskList from './task_list/taskList.json'
 
-const taskCompleted = taskList.filter((task) => task.completed);  
+const taskCompleted = taskList.filter((task) => task.completed); 
+const taskNumber = 1; 
 
 console.log(taskCompleted);
 
@@ -22,10 +23,11 @@ export default function Header() {
                 <img src={reactLogo} className={styles.react} alt="React logo" />
                 <img src={earth} className={styles.earth} alt="Earth logo" />
             </div>
-            <p className={styles.item}>HOMEWORK <span>REACT</span> TASK 1</p>
+            <p className={styles.item}>HOMEWORK <span>REACT</span> TASK {taskNumber}</p>
             </div>
-            
-            <TaskList listIndex={taskCompleted} />
+            <div className={ styles.taskIndex}>
+            <TaskList  listIndex={taskCompleted} />
+            </div>
         </div>
     
     );

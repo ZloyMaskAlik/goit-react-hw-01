@@ -1,5 +1,6 @@
 
 .header {
+    position: relative;
     width: 100%;
     padding: 0px 50px;
     position: sticky;
@@ -46,6 +47,15 @@
         text-shadow: 10px 10px 10px #00000059;
         }
 }
+.taskIndex {
+    position: absolute;
+    top: 100%;
+    right: 8%;
+    z-index: 10;
+    border: 2px solid #49494af5;
+    border-radius: 8px;
+}
+
 .link{
     display: flex;
     align-content: center;
@@ -78,10 +88,6 @@
     background-color: #ffffff;
     border-radius: 50%;
 
-}
-
-pre {
-  margin: 0;
 }
 
 @keyframes logo-spin {
