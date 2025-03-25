@@ -2,13 +2,8 @@ import reactLogo from '../../assets/react.svg'
 import goitLogo from '../../assets/goit.svg'
 import earth from '../../assets/earth.svg'
 import styles from './Header.module.css'
-import TaskList from './task_list/taskList';
-import taskList from './task_list/taskList.json'
 
-const taskCompleted = taskList.filter((task) => task.completed); 
 const taskNumber = 1; 
-
-console.log(taskCompleted);
 
 
 export default function Header() {
@@ -26,7 +21,6 @@ export default function Header() {
             <p className={styles.item}>HOMEWORK <span>REACT</span> TASK {taskNumber}</p>
             </div>
             <div className={ styles.taskIndex}>
-            <TaskList  listIndex={taskCompleted} />
             </div>
         </div>
     
